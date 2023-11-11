@@ -13,8 +13,8 @@ Official releases are tagged and can be found [here](https://github.com/thederpy
 The following branches are in active development:
 |  Branch  |  Description                  |  Godot version  |
 |----------|-------------------------------|-----------------|
-|   main   | Current stable branch    |  Godot 4.2 Beta 1     |
-|    dev   | Current development branch  |  Godot 4.2 Beta 3     |
+|   main   | Current stable branch    |  Godot 4.2 Beta 3     |
+|    dev   | Current development branch  |  Godot 4.2 Beta 5     |
 
 After cloning this repository you will need to install the OpenXR plugin for it to work. The OpenXR plugin is not included within this repository.
 You can obtain the OpenXR plugin [here](https://github.com/GodotVR/godot_openxr/releases) or download it from the asset library within Godot.
