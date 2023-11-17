@@ -1,7 +1,9 @@
 Contributors
 ============
 
-The main author of this project is [Bastiaan Olij](https://github.com/BastiaanOlij) who manages the source repository found at:
+Game development done by [thederpykrafter](https://github.com/thederpykrafter)
+
+The main author of the template used for this project is [Bastiaan Olij](https://github.com/BastiaanOlij) who manages the source repository found at:
 https://github.com/GodotVR/godot-xr-tools
 
 Other people who have helped out by submitting fixes, enhancements, etc are:

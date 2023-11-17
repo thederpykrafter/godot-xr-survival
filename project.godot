@@ -10,9 +10,9 @@ config_version=5
 
 [application]
 
-config/name="Godot XR Survival"
+config/name="Godot XR Tools Demo"
 run/main_scene="res://demo_staging.tscn"
-config/features=PackedStringArray("4.2")
+config/features=PackedStringArray("4.1")
 config/icon="res://icon.png"
 
 [autoload]
