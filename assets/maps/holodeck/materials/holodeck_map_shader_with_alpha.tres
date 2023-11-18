@@ -21,7 +21,7 @@ operator = 3
 [sub_resource type="VisualShaderNodeColorParameter" id="VisualShaderNodeColorParameter_vpqyn"]
 parameter_name = "grid_color"
 default_value_enabled = true
-default_value = Color(1, 0.891186, 0, 1)
+default_value = Color(0.719498, 0.0977051, 0.628076, 1)
 
 [sub_resource type="VisualShaderNodeFloatParameter" id="VisualShaderNodeFloatParameter_valfd"]
 parameter_name = "depth_fade"
@@ -112,7 +112,7 @@ render_mode blend_mix, depth_draw_opaque, cull_back, diffuse_lambert, specular_s
 varying vec3 world_pos;
 
 uniform vec2 grid_scale = vec2(1.000000, 1.000000);
-uniform vec4 grid_color : source_color = vec4(1.000000, 0.891186, 0.000000, 1.000000);
+uniform vec4 grid_color : source_color = vec4(0.719498, 0.097705, 0.628076, 1.000000);
 uniform sampler2D grid_texture : source_color, filter_linear_mipmap, repeat_enable;
 uniform float depth_fade = 2;
 
@@ -238,7 +238,7 @@ void fragment() {
 
 }
 "
-graph_offset = Vector2(-514.14, 399.514)
+graph_offset = Vector2(-501.889, 414.464)
 flags/unshaded = true
 varyings/world_pos = "0,4"
 nodes/vertex/0/position = Vector2(600, 0)
