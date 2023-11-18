@@ -1,0 +1,47 @@
+[gd_scene load_steps=7 format=3 uid="uid://dcqx4gsohs8mi"]
+
+[ext_resource type="Environment" uid="uid://c75hc5t2ml5re" path="res://demo_env.tres" id="1_a4r7l"]
+[ext_resource type="Material" path="res://assets/wahooney.itch.io/green_grid_triplanar.tres" id="2_nocfh"]
+[ext_resource type="Material" path="res://assets/wahooney.itch.io/brown_grid_triplanar.tres" id="3_foon4"]
+
+[sub_resource type="QuadMesh" id="7"]
+size = Vector2(96, 96)
+
+[sub_resource type="BoxShape3D" id="6"]
+size = Vector3(96, 1, 96)
+
+[sub_resource type="BoxMesh" id="BoxMesh_qo1ig"]
+size = Vector3(1, 1, 3)
+
+[node name="BasicMap" type="Node3D"]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = ExtResource("1_a4r7l")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.866025, -0.321394, 0.383022, 0, 0.766044, 0.642788, -0.5, -0.55667, 0.663414, 0, 5, 0)
+light_energy = 0.8
+
+[node name="Border" type="Node3D" parent="."]
+
+[node name="Ground" type="StaticBody3D" parent="Border"]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Border/Ground"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 0)
+mesh = SubResource("7")
+surface_material_override/0 = ExtResource("2_nocfh")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Border/Ground"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, 0)
+shape = SubResource("6")
+
+[node name="Hut" type="StaticBody3D" parent="Border"]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Border/Hut"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 1.5, 0)
+mesh = SubResource("BoxMesh_qo1ig")
+surface_material_override/0 = ExtResource("3_foon4")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Border/Hut"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, 0)
+shape = SubResource("6")
